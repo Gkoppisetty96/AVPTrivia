@@ -1,4 +1,6 @@
 $(document).ready(function() {
+// CHANGE BACK THE TIMERS TO 5 SECONDS!!!
+
 
 let triviaList = [ {
     question: "What street does Harry grow up on?",
@@ -112,7 +114,7 @@ function playGame (){
     $("#questions").html("<p>" + triviaList[currentTrivia].question + "<p>");
     // put in answers
     for (let i = 0; i < 4; i++ ) {
-        var answers = $('<div>');
+        var answers = $('<button>');
         answers.text(triviaList[currentTrivia].answerList[i]);
         answers.attr({'data-index': i, "type": "button"});
         answers.addClass("btn btn-outline-dark thisAnswer");
@@ -170,12 +172,12 @@ function userAlerts () {
     }
     
     if (currentTrivia == (triviaList.length -1)) {
-        setTimeout(endCard, 5000);
+        setTimeout(endCard, 1000);
         console.log("game over");
     }
     else {
         currentTrivia++;
-        setTimeout (playGame, 5000);
+        setTimeout (playGame, 1000);
     }
 }
 
@@ -189,15 +191,15 @@ function endCard () {
     $("#notTrivia").append("<p> Wrong Answers: " + wrongAnswer+ "</p>");
     $("#notTrivia").append("<p> Unanswered: " + unanswered+ "</p>");
     // make play again button
-    var playAgain = $('<div>');
+    var playAgain = $('<button>');
         playAgain.text("Play Again?");;
         playAgain.attr({"type": "button"});
         playAgain.addClass("btn btn-outline-dark");
         playAgain.attr({"id": "play-again"});
-        $("#notTrivia").append(playAgain)
+        $("#notTrivia").append(playAgain);
 }
 
-$("#play-again").on('click', function() {
+$(document).on('click', "#play-again", function() {
     $("#notTrivia").empty();
     gameStart ();
 })

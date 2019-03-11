@@ -1,0 +1,73 @@
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #666666;
+    color: #8d8d8d;
+    text-align: center;
+    font-size: 15px;
+    /* height: 10%; */
+    margin-top: 100px;
+    /* no top margin found when window resized */
+}
+
+a:hover {
+    text-shadow: 0 0 3px #4aaaa5;
+    text-decoration: none;
+    color: currentColor;
+}
+a {
+    color:#8d8d8d; 
+}
+
+body {
+    background-image: url("../images/hogwarts.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    height: 100%;
+    line-height: 1.5em;
+    color: #41414c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-fluid {
+    border: 1px solid purple;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url("../images/ricepaper_v3.png");
+    background-repeat: repeat;
+}
+
+.row {
+    border: 2px solid red;
+}
+/* title */
+#title {
+    font-size: 20px;
+    font-family: 'Meddon', cursive;
+    padding: 15px;
+    text-align: center;
+}
+
+#triplet {
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#main {
+    padding: 15px;
+    font-size: 17px;
+}
+
+#instructions{
+    text-align: center;
+}
+
+#start {
+    display: block; 
+    margin: 0 auto;
+}

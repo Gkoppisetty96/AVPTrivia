@@ -1,6 +1,5 @@
 $(document).ready(function() {
-// CHANGE BACK THE TIMERS TO 5 SECONDS!!!
-
+// CHANGE BACK THE TIMERS TO MORE THAN A SECOND!!!
 
 let triviaList = [ {
     question: "What street does Harry grow up on?",
@@ -85,7 +84,7 @@ let userAnswer;
 function gameStart (){
     $("#instructions").show();
     $("#question-counter").empty();
-    $("#time").empty();
+    $("#countdown").text(15);
     $("#rightanswers").empty();
     $("#wronganswers").empty();
     rightAnswer = 0;
@@ -172,17 +171,20 @@ function userAlerts () {
     }
     
     if (currentTrivia == (triviaList.length -1)) {
-        setTimeout(endCard, 1000);
+        setTimeout(endCard, 4000);
         console.log("game over");
     }
     else {
         currentTrivia++;
-        setTimeout (playGame, 1000);
+        setTimeout (playGame, 4000);
     }
 }
 
 function endCard () {
-    $("#triplet").empty();
+    $("#question-counter").empty();
+    $("#countdown").empty();
+    $("#rightanswers").empty();
+    $("#wronganswers").empty();
     $("#questions").empty();
     $("#answers").empty();
 

@@ -22,10 +22,9 @@ a {
 }
 
 body {
-    background-image: url("../images/hogwarts.jpg");
+    background: url("../images/hogwarts.jpg") center center fixed;
     background-repeat: no-repeat;
-    background-size: 100%;
-    /* background-size: 100% 100%; */
+    background-size: cover;
     height: 100%;
     line-height: 1.5em;
     color: #41414c;

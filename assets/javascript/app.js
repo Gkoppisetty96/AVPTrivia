@@ -1,5 +1,4 @@
 $(document).ready(function() {
-// CHANGE BACK THE TIMERS TO MORE THAN A SECOND!!!
 
 let triviaList = [ {
     question: "What street does Harry grow up on?",
@@ -77,7 +76,7 @@ let wrongAnswer = 0;
 let unanswered = 0;
 let seconds;
 let time;
-let answered = 0;
+let answered = true;
 let userAnswer;
 
 // show instructions, run function
@@ -90,7 +89,8 @@ function gameStart (){
     rightAnswer = 0;
     wrongAnswer = 0;
     unanswered = 0;
-    answered = 0;
+    answered = true;
+    currentTrivia = 0;
 }
 
 // hide instructions, start new game

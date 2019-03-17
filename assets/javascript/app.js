@@ -171,12 +171,12 @@ function userAlerts () {
     }
     
     if (currentTrivia == (triviaList.length -1)) {
-        setTimeout(endCard, 4000);
+        setTimeout(endCard, 1000);
         console.log("game over");
     }
     else {
         currentTrivia++;
-        setTimeout (playGame, 4000);
+        setTimeout (playGame, 2000);
     }
 }
 

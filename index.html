@@ -8,34 +8,48 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/bolt.ico">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Meddon" rel="stylesheet">
 </head>
 
 <body>
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand">Geethika Koppisetty</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="https://gkoppisetty96.github.io">Back Home</a>
+                <a class="nav-item nav-link disabled" href="#">AVPTrivia</a>
+            </div>
+        </div>
+    </nav>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12" id= "title">
+            <div class="col-md-12" id="title">
                 A Very Potter Trivia Game
             </div>
         </div>
         <div class="row" id="triplet">
-            <div class="col-md-4" id= "counter">
-                Question: <span id= "question-counter"></span>
+            <div class="col-md-4" id="counter">
+                Question: <span id="question-counter"></span>
             </div>
-            <div class="col-md-4" id= "timer">
-                You have <span id= "countdown">15</span> seconds
+            <div class="col-md-4" id="timer">
+                You have <span id="countdown">15</span> seconds
             </div>
-            <div class="col-md-4" id= "scorecard">
+            <div class="col-md-4" id="scorecard">
                 <p>Right: <span id="rightanswers"></span></p>
                 <p>Wrong: <span id="wronganswers"></span></p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12" id= "main">
+            <div class="col-md-12" id="main">
                 <span id="instructions">
                     <p>Welcome to Harry Potter trivia!</p>
-                    <p>You'll make your way through seventeen questions, with fifteen seconds each to choose your answer.</p>
+                    <p>You'll make your way through seventeen questions, with fifteen seconds each to choose your
+                        answer.</p>
                     <p>Choose wisely, as you may not change your answer</p>
                     <p>Click the button to start!</p>
                     <button type="button" class="btn btn-outline-secondary" id="start">Start!</button>
@@ -50,14 +64,10 @@
 
 
     <footer>
-        <p>
-            <a href="https://gkoppisetty96.github.io/">Index</a> |
-            <a href="https://gkoppisetty96.github.io/portfolio.html">Portfolio</a> |
+        <span id="footer-info">
             Copyright &copy; 2019 Geethika Koppisetty
-        </p>
-
+        </span>
     </footer>
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

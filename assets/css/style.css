@@ -21,9 +21,6 @@ body {
 
 footer {
     width: 100%;
-    position: fixed;
-    left: 0;
-    bottom: 0;
     background: #666666;
     color: #8d8d8d;
     height: 3em;
@@ -38,8 +35,6 @@ a:hover {
 a {
     color:inherit; 
 }
-
-
 
 .container-fluid {
     border: 2px solid #41414c;

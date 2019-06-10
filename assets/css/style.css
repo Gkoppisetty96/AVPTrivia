@@ -20,11 +20,14 @@ body {
 }
 
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
     width: 100%;
     background: #666666;
     color: #8d8d8d;
-    height: 3em;
-    padding: 1em;
+    height: 2em;
+    padding: .5em;
 }
 
 a:hover {
